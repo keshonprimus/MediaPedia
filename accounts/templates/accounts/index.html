@@ -1,0 +1,58 @@
+{%block content%}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="  /static/CSS/homestyle.css?{% now "U" %}">
+</head>
+
+<body style="background-image: url('{% static "images/slide1.png"%}')";">
+<header>
+    <nav class = "navbar">
+        <div class="logo"><a href="index.html"><img src="{%static 'images/logo.png'%}" alt="logo" width="200" height="91" style="max-width:85%;
+            height:auto;"></a></div>
+        <ul class = "navitems">
+            <li>
+            <div class="dropdown"> Businesses &nbsp; <i class="fa fa-caret-down"></i>
+           
+                <div class="dropdown-content">
+                    <a href="{%url 'mojos'%}">Mojo's Books & Records</a>
+                    <a href="#">*Felicitous Cafe</a>
+                    <a href="#">*Mei's Kitchen</a>
+                </div>
+            </div>
+        </li>
+       
+            <li class="special-item"><a href="{%url 'getstarted' %}">Get Started</a></li>
+        
+    </ul>
+    </nav>
+
+    <div class="container">
+
+        <h1> CREATE YOUR <br>
+            INVENTORY...
+        </h1>
+        <p class="desc">MediaPedia offers an online<br>
+            inventory service  for small <br>
+            businesses to catalog products <br>online for customers 
+            to easily<br>
+            find and view. <br>
+            <a href="mailto:renuka1@usf.edu" class="btn btn-success contact">Contact Us</a>
+            
+
+        </p>
+        
+    </div>
+   
+</header>
+    <script src=" accounts\static\JS\indexSlider.js" ></script>
+</body>
+</html>
+{%endblock%}

@@ -1,0 +1,15 @@
+{% extends 'accounts/main.html'%}
+{% block content%}  
+<h1 class="d-flex justify-content-start">Hello {{employee.employeeFirstName}} </h1>
+<ul class="list-group">
+    <li class="list-group-item">ID: {{employee.employeeID}}</li>
+    <li class="list-group-item">First Name: {{employee.employeeFirstName}}</li>
+    <li class="list-group-item">Last Name: {{employee.employeeLastName}}</li>
+    <li class="list-group-item">Email: {{employee.employeeEmail}}</li>
+    <li class="list-group-item">Role: {{employee.employeeRole_id.role}}</li>
+</ul>
+<a class="btn" href="{%url 'updateuser' employee.employeeID%}">Update</a>
+<a class="btn" href="{%url 'dash'%}">Back</a>
+{% endblock %}
+
+

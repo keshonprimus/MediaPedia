@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Get rid of all default margins/paddings. Set typeface */
+body {
+    box-sizing: border-box;
+    font-family: "lato", sans-serif;
+    background: #6a6a6a;
+    background: linear-gradient(90deg, rgba(7,114,115,1) 0%, rgba(141,179,96,1) 36%, rgba(2,47,56,1) 100%);
+    color: rgb(255, 254, 254);
+}
+  
+  .signupform {
+    display: flex;
+    /*justify-content: right;*/
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .form {
+    background-color: rgba(255, 255, 255, 0.126);
+    width: 400px;
+    /*height: 567px;*/
+    margin-top: 26px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    border-style: solid;
+    padding: 20px 40px;
+    box-shadow: 0 28px 10px -10px rgba(43, 42, 42, 0.589);
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+.already{
+  font-family: "lato";
+  text-align: center;
+text-decoration: none;
+color: white;
+}
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 13px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  
+  ::placeholder {
+    color: transparent;
+  }
+  
+
+
+  .submitBtn {
+  display: block;
+ 
+  padding: 15px 30px;
+  border: none;
+  background-color: #98a3a3;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+ 
+}
+.submitBtn:hover
+{
+	background-color: #3f5962;
+  transform: translateY(-2px);
+}
+
+
+
+
+.generated
+{
+    justify-content: space-between;
+    border-style: none;
+}

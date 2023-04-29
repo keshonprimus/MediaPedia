@@ -1,0 +1,22 @@
+{% extends 'accounts/main.html'%}
+{% block content%}  
+{%load static%}
+
+
+<div class="card text-center m-5">
+    <div class="card-header">
+      Delete Product
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Are you sure you want to delete "{{item.pid}}"?</h5>
+      <form action="{% url 'deleteprod' item.pid %}" method="POST">
+        {%csrf_token%}
+        <a class="btn btn-secondary" href="{%url 'products'%}">Cancel</a>
+        <input class="btn btn-success" type="submit" name="Confirm" id="">
+    </form>
+    
+  </div>
+
+
+
+{% endblock %}

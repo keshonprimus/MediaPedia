@@ -1,0 +1,33 @@
+
+/*LANDING PAGE NAV*/
+
+.bar
+{
+    
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    border-top: 5px solid #ed393c;
+
+}
+.logo
+{
+    float: left;
+    padding: 15px;
+    
+    
+}
+.clearfix
+{
+    clear: both;
+}
+
+.card {
+
+    overflow: hidden;
+}
+.card-text {
+    word-wrap: break-word;
+}

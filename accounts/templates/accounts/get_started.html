@@ -1,0 +1,98 @@
+{%block content%}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" /static/CSS/getstarted.css?{% now "U" %}">
+ 
+    <title>Document</title>
+</head>
+<body>
+    <nav class = "navbar">
+        <div class="logo"><a href="{%url 'home'%}"><img src="{%static 'images/logo.png'%}" alt="logo" width="200" height="91" style=" max-width:85%;
+            height:auto;"></a></div>
+        <ul class = "navitems">
+            <li>
+            <div class="dropdown" style="padding-right: 90px;"> Businesses &nbsp; <i class="fa fa-caret-down"></i>
+           
+                <div class="dropdown-content">
+                    <a href="{%url 'mojos'%}">Mojo's Books & Records</a>
+                    <a href="#">Felicitous Cafe</a>
+                    <a href="#">Business 3</a>
+                </div>
+            </div>
+        </li>
+       
+        
+    </ul>
+    </nav>
+       
+    <div class="container">
+      <!--  <div class="" style=" text-align: center; background-color: black;"> <img src="{%static 'images/intro.jpg'%}" alt="" style="max-width: 70%%; max-height: auto;"> </div>-->
+        <h2>Our pricing</h2>
+       
+        <div class="price-tag">
+            
+            <div class="price-element">
+                <div class="price-tier">Free</div>
+                <div class="price">
+                    <p class="money">$0</p>
+                    <p class="per"></p>
+                </div>
+                <div class="description">With this plan, you can list up to 100 products in your inventory and provide basic search functionality for your customers to easily find what they're looking for</div>
+                <hr>
+                <ul class="features">
+                    <li><i class="fa-solid fa-circle-check"></i>Up to 100 products can be listed in the inventory</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Basic search functionality for customers to find products by name or category</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Access to basic analytics on inventory views and search queries</li>
+                </ul>
+                <div class="subscribe">
+                    <button>Try for free</button>
+                </div>
+            </div>
+            <div class="price-element">
+                <div class="price-tier">Pro</div>
+                <div class="price">
+                    <p class="money">$12</p>
+                    <p class="per">/month</p>
+                </div>
+                <div class="description">With this plan, you can list up to 500 products in your inventory and provide advanced search functionality to help customers filter and find products more easily. You'll also have access to customizable branding options for your inventory site and more detailed analytics to track inventory performance and customer behavior</div>
+                <hr>
+                <ul class="features">
+                    <li><i class="fa-solid fa-circle-check"></i>Up to 500 products can be listed in the inventory</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Advanced search functionality for customers to filter products by multiple criteria (e.g. price range, category, authors)</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Access to more detailed analytics on inventory views and search queries</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Ability to create and manage multiple inventory sites (e.g. one for each location or product line)</li>
+                </ul>
+                <div class="subscribe reverse">
+                    <button>Subscribe now</button>
+                </div>
+            </div>
+            <div class="price-element">
+                <div class="price-tier">Enterprise Custom</div>
+                <div class="price">
+                    <p class="money">Contact for price</p>
+                    <p class="per"></p>
+                </div>
+                <div class="description">With this plan, you can list unlimited products in your inventory and provide advanced search functionality with predictive search suggestions and natural language processing. You'll also have access to a dedicated account manager and support team available 24/7</div>
+                <hr>
+                <ul class="features">
+                    <li><i class="fa-solid fa-circle-check"></i>Unlimited products can be listed in the inventory</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Advanced search functionality with predictive search suggestions and natural language processing</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Dedicated account manager and support team available 24/7</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Customizable reporting and analytics dashboards to track inventory performance and customer behavior</li>
+                </ul>
+                <div class="subscribe">
+                    <button>Contact Sales</button>
+                </div>
+            </div>
+        </div>
+        <div class="black-background"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/faf8bdc568.js" crossorigin="anonymous"></script>
+</body>
+</html>
+{%endblock%}

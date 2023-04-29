@@ -1,0 +1,21 @@
+{% extends 'accounts/main.html'%}
+{% block content%}  
+{%load static%}
+
+<div class="card text-center">
+    <div class="card-header">
+      Delete User
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Are you sure you want to delete "{{item}}"?</h5>
+      <form action="{% url 'deleteprod' item.title %}" method="POST">
+        {%csrf_token%}
+        <a href="{%url 'dash'%}">Cancel</a>
+        <input type="submit" name="Confirm" id="">
+    </form>
+    </div>
+  </div>
+
+
+
+{% endblock %}

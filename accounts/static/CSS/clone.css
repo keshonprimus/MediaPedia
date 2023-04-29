@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Nav bar */
+
+.nav {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    border-top: 5px solid #ed393c;
+}
+
+.nav .logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    margin: auto;
+}
+
+.nav .nav-items {
+    color: white;
+    flex: 2;
+}
+
+.nav-items > li {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 22px 20px;
+    display: inline-block;
+    text-transform: uppercase; 
+}
+
+.nav-items li:hover {
+    cursor: pointer;
+    animation: colorTrans ease 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorTrans {
+    from {
+        background-color: rgba(237, 59, 62,0);
+    }
+    to {
+        background-color: rgba(237, 59, 62,1);
+    }
+}
+
+/* Sub nav (sub-about, selltrade,contact) */
+
+@keyframes navHover{
+    from {
+        transform: translateY(-30px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sub-nav:hover ul {
+    display: block;
+    animation: navHover ease 0.5s;
+}
+
+.sub-nav-element {
+    color: white;
+    display: none;
+    position: absolute;
+    /* top: 63px;
+    left: 516px; */
+}
+
+.sub-nav-element li {
+    padding: 15px 15px;
+    background: rgba(0,0,0,0.9);
+    width: 200px;
+    border-bottom: solid 2px #666666;
+    text-transform: capitalize;
+}
+
+.sub-nav-element li:hover {
+    animation: subNavHover ease 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes subNavHover {
+    from {
+        border-left: none;
+    }
+    30% {
+        border-left: solid 1px #ed393c;
+
+    }
+    70% {
+        border-left: solid 3px #ed393c;
+    }
+    to {
+        border-left: solid 5px #ed393c;
+    }
+}
+
+
+/* slider img */
+.slider img {
+    width: 100%;
+    height: 500px;
+}
+
+/* content */
+.content {
+    width: 960px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.content .heading {
+    padding-bottom: 15px;
+    font-size: 36px;
+    font-family: 'Fjialla One', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.2em;
+    word-wrap: break-word;
+}
+
+.img-bookmark {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content .paragraph {
+    text-align: center;
+    font-family: 'Fjialla One', sans-serif;
+    opacity: 0.8;
+}
+
+.paragraph .book-heading {
+    margin-top: 15px;
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #222121;
+}
+
+.footer-content {
+    color: white;
+    display: flex;
+}
+
+.footer-para {
+    padding: 40px 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: center;
+    flex: 1;
+}
+
+.footer-para .footer-company {
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+.footer-credit {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-credit i {
+    color: #ed393c;
+    font-style: normal;
+    padding-left: 3px;
+}
